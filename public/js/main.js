@@ -1,6 +1,6 @@
 document.querySelector("button").addEventListener("click", function () {
   const name = document.querySelector(".list").value;
-  fetch(`http://localhost:3000/api/${name}`)
+  fetch(`https://avengers-api-project.herokuapp.com/api/${name}`)
     .then((res) => res.json())
     .then((data) => {
       document.querySelector(".result").innerHTML = "";
